@@ -1,0 +1,45 @@
+<svg width="1440" height="353" viewBox="0 0 1440 353" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.1">
+<line x1="81" y1="289.5" x2="1358" y2="289.5" stroke="#2F5B90"/>
+<line x1="4.37114e-08" y1="193.5" x2="1440" y2="193.5" stroke="#2F5B90"/>
+<line x1="4.37114e-08" y1="25.5001" x2="1440" y2="25.5002" stroke="#2F5B90"/>
+<line x1="81.5" y1="956" x2="81.5001" y2="24.9999" stroke="#2F5B90"/>
+<line x1="1357.5" y1="956" x2="1357.5" y2="25" stroke="#2F5B90"/>
+<line x1="1241.5" y1="956" x2="1241.5" y2="193" stroke="#2F5B90"/>
+<line x1="197.5" y1="956" x2="197.5" y2="193" stroke="#2F5B90"/>
+<g clip-path="url(#clip0_132_987)">
+<mask id="path-8-inside-1_132_987" fill="white">
+<path d="M1357 289H1476V674H1357V289Z"/>
+</mask>
+<line x1="1296.65" y1="334.124" x2="1492.13" y2="242.97" stroke="#2F5B90"/>
+<line x1="1296.65" y1="350.651" x2="1492.13" y2="259.498" stroke="#2F5B90"/>
+<line x1="1296.65" y1="367.179" x2="1492.13" y2="276.026" stroke="#2F5B90"/>
+<line x1="1296.65" y1="383.707" x2="1492.13" y2="292.553" stroke="#2F5B90"/>
+<line x1="1296.65" y1="400.235" x2="1492.13" y2="309.081" stroke="#2F5B90"/>
+<line x1="1296.65" y1="416.763" x2="1492.13" y2="325.609" stroke="#2F5B90"/>
+<line x1="1296.65" y1="433.29" x2="1492.13" y2="342.137" stroke="#2F5B90"/>
+</g>
+<path d="M1357 289V290H1476V289V288H1357V289ZM1476 674V673H1357V674V675H1476V674Z" fill="#2F5B90" mask="url(#path-8-inside-1_132_987)"/>
+<g clip-path="url(#clip1_132_987)">
+<mask id="path-17-inside-2_132_987" fill="white">
+<path d="M-37 289H82V674H-37V289Z"/>
+</mask>
+<line x1="-97.35" y1="334.124" x2="98.1293" y2="242.97" stroke="#2F5B90"/>
+<line x1="-97.35" y1="350.651" x2="98.1293" y2="259.498" stroke="#2F5B90"/>
+<line x1="-97.35" y1="367.179" x2="98.1293" y2="276.026" stroke="#2F5B90"/>
+<line x1="-97.35" y1="383.707" x2="98.1293" y2="292.553" stroke="#2F5B90"/>
+<line x1="-97.35" y1="400.235" x2="98.1293" y2="309.081" stroke="#2F5B90"/>
+<line x1="-97.35" y1="416.763" x2="98.1293" y2="325.609" stroke="#2F5B90"/>
+<line x1="-97.35" y1="433.29" x2="98.1293" y2="342.137" stroke="#2F5B90"/>
+</g>
+<path d="M-37 289V290H82V289V288H-37V289ZM82 674V673H-37V674V675H82V674Z" fill="#2F5B90" mask="url(#path-17-inside-2_132_987)"/>
+</g>
+<defs>
+<clipPath id="clip0_132_987">
+<path d="M1357 289H1476V674H1357V289Z" fill="white"/>
+</clipPath>
+<clipPath id="clip1_132_987">
+<path d="M-37 289H82V674H-37V289Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>
