@@ -4,14 +4,15 @@ export default function Banner() {
       <p className="font-mono text-xs text-gold/80 flex items-center justify-center gap-2 flex-wrap">
         <span className="avpulse" />
         Currently available for new client work —{' '}
-        <a
-          href="https://cal.com"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          type="button"
+          data-cal-namespace="free-consultation"
+          data-cal-link="olamide-adeola-ogbndk/free-consultation"
+          data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
           className="underline underline-offset-2 hover:text-gold transition-colors"
         >
           book a free 30-min intro call
-        </a>
+        </button>
       </p>
     </div>
   );

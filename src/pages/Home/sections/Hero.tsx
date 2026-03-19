@@ -54,14 +54,15 @@ export function Hero() {
             >
               View Work <Icon n="arr" s={14} />
             </button>
-            <a
-              href="https://cal.com"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              data-cal-namespace="free-consultation"
+              data-cal-link="olamide-adeola-ogbndk/free-consultation"
+              data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
               className="flex items-center gap-2 px-6 py-3 border border-border text-muted font-display font-semibold text-sm rounded-md hover:border-gold/40 hover:text-text transition-all"
             >
               <Icon n="cal" s={14} /> Book a Call
-            </a>
+            </button>
             <a
               href="#"
               className="flex items-center gap-2 px-6 py-3 border border-border text-muted font-display font-semibold text-sm rounded-md hover:border-gold/40 hover:text-text transition-all"
@@ -91,24 +92,7 @@ export function Hero() {
               Open to work
             </div>
           </div>
-          <div className="flex gap-6">
-            {[
-              { v: '4+', l: 'Years' },
-              { v: '40+', l: 'Projects' },
-              { v: '12', l: 'Clients' },
-            ].map((s, i) => (
-              <div key={i} className="text-center">
-                <div className="font-display font-bold text-gold text-2xl">{s.v}</div>
-                <div className="font-mono text-muted text-xs">{s.l}</div>
-              </div>
-            ))}
-          </div>
         </div>
-      </div>
-
-      <div className="hscr opacity-0 absolute bottom-8 left-6 flex items-center gap-3">
-        <div className="w-px h-10 bg-gradient-to-b from-transparent to-gold/40" />
-        <span className="font-mono text-muted text-xs">scroll</span>
       </div>
     </section>
   );

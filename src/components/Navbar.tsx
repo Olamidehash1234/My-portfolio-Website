@@ -55,6 +55,7 @@ export default function Navbar() {
   const links = [
     { id: 'home', label: 'Home', path: '/' },
     { id: 'projects', label: 'Projects', path: '/projects' },
+    { id: 'blog', label: 'Blog', path: '/' },
     { id: 'contact', label: 'Contact', path: '/contact' },
   ];
 
@@ -93,14 +94,15 @@ export default function Navbar() {
                 />
               </button>
             ))}
-            <a
-              href="https://cal.com"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              data-cal-namespace="free-consultation"
+              data-cal-link="olamide-adeola-ogbndk/free-consultation"
+              data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
               className="flex items-center gap-2 px-4 py-2 rounded-md border border-gold/30 bg-gold/5 text-gold text-sm font-display font-semibold hover:bg-gold/12 hover:border-gold/60 transition-all"
             >
-              <Icon n="cal" s={13} /> Book a Consult
-            </a>
+              <Icon n="cal" s={13} /> Book a Consultation
+            </button>
           </div>
 
           <button
@@ -128,14 +130,15 @@ export default function Navbar() {
             {label}
           </button>
         ))}
-        <a
-          href="https://cal.com"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          type="button"
+          data-cal-namespace="free-consultation"
+          data-cal-link="olamide-adeola-ogbndk/free-consultation"
+          data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
           className="mi flex items-center gap-2 px-6 py-3 border border-gold/40 bg-gold/8 text-gold font-display font-semibold text-lg rounded-md"
         >
           <Icon n="cal" s={16} /> Book a Consult
-        </a>
+        </button>
       </div>
     </>
   );

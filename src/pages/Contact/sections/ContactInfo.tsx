@@ -2,6 +2,9 @@ import { Icon } from '../../../components/Icon';
 import { AVATAR } from '../../../utils/portfolioData';
 
 export function ContactInfo() {
+  const CAL_NAMESPACE = "free-consultation";
+  const CAL_LINK = "olamide-adeola-ogbndk/free-consultation";
+
   return (
     <div className="lg:col-span-2 space-y-7">
       <div className="ci opacity-0 flex items-center gap-4 mb-2">
@@ -29,15 +32,34 @@ export function ContactInfo() {
             { l: 'Schedule', v: 'Book on Cal.com', ic: 'cal', h: 'https://cal.com' },
             { l: 'GitHub', v: 'github.com/olamide', ic: 'gh', h: '#' },
           ].map((item, i) => (
-            <a key={i} href={item.h} className="ci opacity-0 flex items-center gap-3.5 group">
-              <div className="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg border border-border bg-panel text-muted group-hover:text-gold group-hover:border-gold/40 transition-all">
-                <Icon n={item.ic} s={13} />
-              </div>
-              <div>
-                <p className="font-mono text-xs text-muted">{item.l}</p>
-                <p className="font-body text-sm text-text group-hover:text-gold transition-colors">{item.v}</p>
-              </div>
-            </a>
+            item.ic === 'cal' ? (
+              <button
+                key={i}
+                type="button"
+                data-cal-namespace={CAL_NAMESPACE}
+                data-cal-link={CAL_LINK}
+                data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                className="ci opacity-0 flex items-center gap-3.5 group"
+              >
+                <div className="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg border border-border bg-panel text-muted group-hover:text-gold group-hover:border-gold/40 transition-all">
+                  <Icon n={item.ic} s={13} />
+                </div>
+                <div>
+                  <p className="font-mono text-xs text-muted">{item.l}</p>
+                  <p className="font-body text-sm text-text group-hover:text-gold transition-colors">{item.v}</p>
+                </div>
+              </button>
+            ) : (
+              <a key={i} href={item.h} className="ci opacity-0 flex items-center gap-3.5 group">
+                <div className="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg border border-border bg-panel text-muted group-hover:text-gold group-hover:border-gold/40 transition-all">
+                  <Icon n={item.ic} s={13} />
+                </div>
+                <div>
+                  <p className="font-mono text-xs text-muted">{item.l}</p>
+                  <p className="font-body text-sm text-text group-hover:text-gold transition-colors">{item.v}</p>
+                </div>
+              </a>
+            )
           ))}
         </div>
       </div>
